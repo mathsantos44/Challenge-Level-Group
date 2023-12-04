@@ -44,30 +44,122 @@ localhost:8081
 ### Endpoints
 #### 1. /product
 - GET /product
+
 Descrição: Retorna uma lista de todos os produtos.
-Código de Status de Sucesso: 200 OK
-Código de Status de Erro: 404 Not Found
--GET /product/{id}
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- GET /product/{id}
+
 Descrição: Retorna um produto com o ID passado.
-Código de Status de Sucesso: 200 OK
-Código de Status de Erro: 404 Not Found
--GET /product/by-name?name={name}
-Descrição: Retorna um produto com o nome passado.
-Código de Status de Sucesso: 200 OK
-Código de Status de Erro: 404 Not Found
--GET /product/by-price?price={price}&name={name}
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- GET /product/by-name?name={name}
+
+Descrição: Retorna uma lista de produtos com o nome passado.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- GET /product/by-price?price={price}&name={name}
+
+Descrição: Retorna uma lista de produtos  com o nome passado e e preço dentro do intervalo sugerido.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
 - POST /product
-Descrição: cria um produto
-Código de Status de Sucesso: 201 OK
-Código de Status de Erro: 400 Bad Request
-- PUT /product
-Descrição: Atualiza um produto
-Código de Status de Sucesso: 200 OK
-Código de Status de Erro: 400 Bad Request
-- DELETE /product
-Descrição: Remove um produto
-Código de Status de Sucesso: 204 No Content
-Código de Status de Erro: 404 Not Found
+
+Descrição: Cria um produto
+Código de Status de Sucesso: 201 OK.
+Código de Status de Erro: 400 Bad Request.
+- PUT /product/{id}
+
+Descrição: Atualiza um produto pelo ID.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 400 Bad Request.
+- DELETE /product/{id}
+
+Descrição: Remove um produto pelo ID.
+Código de Status de Sucesso: 204 No Content.
+Código de Status de Erro: 404 Not Found.
+
+#### 2. /client
+- GET /client
+
+Descrição: Retorna uma lista de todos os clientes.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- GET /client/{id}
+
+Descrição: Retorna um cliente com o ID passado.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- POST /client
+
+Descrição: Cria um cliente.
+Código de Status de Sucesso: 201 Created.
+Código de Status de Erro: 400 Bad Request.
+- PUT /client/{id}
+
+Descrição: Atualiza um cliente pelo ID.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 400 Bad Request.
+- DELETE /client/{id}
+
+Descrição: Remove um cliente pelo ID.
+Código de Status de Sucesso: 204 No Content.
+Código de Status de Erro: 404 Not Found.
+
+#### 3. /supplier
+- GET /supplier
+
+Descrição: Retorna uma lista de todos os fornecedores.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- GET /supplier/{id}
+
+Descrição: Retorna um fornecedor com o ID passado.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- POST /supplier
+
+Descrição: Cria um novo fornecedor.
+Código de Status de Sucesso: 201 Created.
+Código de Status de Erro: 400 Bad Request.
+- PUT /supplier/{id}
+
+Descrição: Atualiza um fornecedor pelo ID.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 400 Bad Request.
+- DELETE /supplier/{id}
+
+Descrição: Remove um fornecedor pelo ID.
+Código de Status de Sucesso: 204 No Content.
+Código de Status de Erro: 404 Not Found.
+
+#### 4. /request
+- GET /request
+
+Descrição: Retorna uma lista de todas as solicitações.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- GET /request/{id}
+
+Descrição: Retorna uma solicitação com o ID passado.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
+- POST /request
+
+Descrição: Cria uma nova solicitação.
+Código de Status de Sucesso: 201 Created.
+Código de Status de Erro: 400 Bad Request.
+- PUT /request/{id}
+
+Descrição: Atualiza uma solicitação pelo ID.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 400 Bad Request.
+- DELETE /request/{id}
+
+Descrição: Remove uma solicitação pelo ID.
+Código de Status de Sucesso: 204 No Content.
+Código de Status de Erro: 404 Not Found.
+
 
 # DIAGRAMA ENTIDADE RELACIONAMENTO
 ![image](https://github.com/Leosagara/Challenge/assets/75694982/ecc5ee4e-fd0c-4625-812a-20a26def6624)
