@@ -13,6 +13,17 @@ Empresas frequentemente enfrentam desafios ao buscar produtos específicos de fo
 ## Solução proposta
 O projeto propõe o desenvolvimento de um software inovador para simplificar e automatizar o processo de cotação de produtos de empresas. Baseado em requisitos do usuário e integrando Machine Learning, a solução visa eliminar as dificuldades associadas a esse procedimento. Ao aprender continuamente com padrões e preferências, o software tem o objetivo de tornar as cotações uma experiência eficiente, proporcionando às empresas uma abordagem mais ágil e inteligente para suas necessidades de aquisição de produtos, buscando também padronizar os dados dos fornecedores.
 
+## Público alvo
+- Empresas de médio e grande porte;
+- Setores de compras;
+- Indústrias.
+
+## Impacto financeiro
+- Redução de Custos Operacionais;
+- Eficiência na Tomada de Decisões;
+- Padronização de Dados;
+- Aumento da Produtividade.
+
 ## Requisitos
 - Permitir ao usuário inserir as características do produto que ele deseja;
 - Usar algoritmos de Machine Learning para melhorar as opções apresentadas na cotação;
