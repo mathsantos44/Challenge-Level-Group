@@ -1,11 +1,14 @@
 # NOME DA APLICAÇÃO
-indefinido
+FurniFlow
 # INTEGRANTES
 - Ayslan Garcia – responsável pela implementação de API’s e auxílio na parte de projetos.
 - Leonardo Sagara – responsável pelo desenvolvimento back-end e auxílio na parte de projetos.
 - Matheus Oliveira – responsável pela integração Cloud do sistema, desenvolvimento da lógica de machine learning e auxílio na parte de projetos.
 - Paulo Maldonado – responsável pelo desenvolvimento da interface gráfica e auxílio na parte de projetos.
 - Pedro Kokuba – responsável pela criação do banco de dados e sua lógica e auxílio na parte de projetos.
+
+#### Link do pitch:
+https://youtu.be/Y0awPv5_TM4
 
 # Proposta tecnológica
 ## Problema a ser resolvido
