@@ -50,7 +50,7 @@ O projeto propõe o desenvolvimento de um software inovador para simplificar e a
 - Por se tratar de um projeto demonstrativo, não será usado uma base de dados com informações de fornecedores reais, mas para que as funcionalidades sejam testadas, será criado um banco de dados artificial de fornecedores e produtos.
 
 # INSTRUÇÕES
-Por se tratar de uma aplicação demonstrativa muitos funcionalidades não estão funcionando ainda, para que haja uma demonstração de uma possivel requisição do cliente, ao rodar a classe Main() abrir no navegador localhost:8081/product, isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos fazer as procuras usando os endpoints.
+Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador localhost:8081/product, isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras usando os endpoints.
 
 # Documentação da API
 ### Server url
@@ -174,6 +174,7 @@ Descrição: Remove uma solicitação pelo ID.
 Código de Status de Sucesso: 204 No Content.
 Código de Status de Erro: 404 Not Found.
 
+# Arquitetura
 
 # DIAGRAMA ENTIDADE RELACIONAMENTO
 ![image](https://github.com/Leosagara/Challenge/assets/75694982/ecc5ee4e-fd0c-4625-812a-20a26def6624)
