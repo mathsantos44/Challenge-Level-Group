@@ -10,45 +10,6 @@ FurniFlow
 #### Link do pitch:
 https://youtu.be/Y0awPv5_TM4
 
-# Proposta tecnológica
-## Problema a ser resolvido
-Empresas frequentemente enfrentam desafios ao buscar produtos específicos de fornecedores externos. O processo tradicional de cotação é muitas vezes lento, ineficiente e suscetível a erros. A ineficiência do processo de cotação manual é uma das principais questões a serem abordadas. A pesquisa extensiva de fornecedores e a compilação manual de informações sobre produtos consomem tempo considerável, prejudicando a agilidade operacional das empresas. Além disso, a dificuldade em identificar fornecedores ideais é um desafio comum. A falta de uma abordagem sistemática para avaliar e comparar propostas muitas vezes resulta em escolhas que não atendem plenamente às necessidades específicas da empresa.
-## Solução proposta
-O projeto propõe o desenvolvimento de um software inovador para simplificar e automatizar o processo de cotação de produtos de empresas. Baseado em requisitos do usuário e integrando Machine Learning, a solução visa eliminar as dificuldades associadas a esse procedimento. Ao aprender continuamente com padrões e preferências, o software tem o objetivo de tornar as cotações uma experiência eficiente, proporcionando às empresas uma abordagem mais ágil e inteligente para suas necessidades de aquisição de produtos, buscando também padronizar os dados dos fornecedores.
-
-## Público alvo
-- Empresas de médio e grande porte;
-- Setores de compras;
-- Indústrias.
-
-## Impacto financeiro
-- Redução de Custos Operacionais;
-- Eficiência na Tomada de Decisões;
-- Padronização de Dados;
-- Aumento da Produtividade.
-
-## Requisitos
-- Permitir ao usuário inserir as características do produto que ele deseja;
-- Usar algoritmos de Machine Learning para melhorar as opções apresentadas na cotação;
-- Gerar cotações especializadas de acordo com o perfil da empresa.
-
-## Tecnologias utilizadas
-- Linguagem de programção - Java 18;
-- Frameworks - Springboot 3.1.5, Hibernate 3;
-- Front-end - React 18;
-- Banco de dados: Oracle database 19.0.0;
-- Controle de Versão - Git;
-- Serviços de Cloud - Docker 4.25.2.
-
-## Entregáveis
-- Protótipo funcional do software de automação de cotações;
-- Documentação detalhada;
-- Relatório de teste e validação.
-
-# O que ficará fora do escopo do projeto
-- Não será trabalhado no programa estrutura de produtos muito complexos que demandem requisitos difíceis de tratar no código.
-- Por se tratar de um projeto demonstrativo, não será usado uma base de dados com informações de fornecedores reais, mas para que as funcionalidades sejam testadas, será criado um banco de dados artificial de fornecedores e produtos.
-
 # INSTRUÇÕES
 Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador localhost:8081/product, isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras usando os endpoints.
 
@@ -175,7 +136,7 @@ Código de Status de Sucesso: 204 No Content.
 Código de Status de Erro: 404 Not Found.
 
 # Arquitetura
-
+![Captura de Tela (174)](https://github.com/Leosagara/Challenge-Level-Group/assets/75694982/e50e0079-1404-442a-9a48-a4872bd01f64)
 # DIAGRAMA ENTIDADE RELACIONAMENTO
 ![image](https://github.com/Leosagara/Challenge/assets/75694982/ecc5ee4e-fd0c-4625-812a-20a26def6624)
 # DIAGRAMA DE CLASSES
