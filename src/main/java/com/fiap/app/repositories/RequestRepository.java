@@ -10,6 +10,5 @@ import java.util.List;
 @Repository
 public interface RequestRepository extends JpaRepository<Request,Long> {
 
-    List<Product> findByNameAndPriceLessThanEqualAndQuantityGreaterThanEqual(String name, Float price, Integer quantity);
 
 }

@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 @ToString
 @Table(name="request")
-@AttributeOverride(name = "id", column = @Column(name = "request_id"))
+@AttributeOverride(name = "id", column = @Column(name = "requestId"))
 public class Request extends BaseEntity {
 
     /*
@@ -31,6 +31,6 @@ public class Request extends BaseEntity {
     private List<Product> productList;
 
     @ManyToOne
-    @JoinColumn(name="client_id")
+    @JoinColumn(name="clientId")
     private Client client;
 }

@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 @ToString
 @Table(name="supplier")
-@AttributeOverride(name = "id", column = @Column(name = "supplier_id"))
+@AttributeOverride(name = "id", column = @Column(name = "supplierId"))
 public class Supplier extends BaseEntity {
 
     private String supplierName;

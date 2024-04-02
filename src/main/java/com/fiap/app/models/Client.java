@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 @ToString
 @Table(name="client")
-@AttributeOverride(name = "id", column = @Column(name = "client_id"))
+@AttributeOverride(name = "id", column = @Column(name = "clientId"))
 public class Client extends BaseEntity {
     private String clientName;
     private String clientEmail;

@@ -38,5 +38,9 @@ public class ProductService {
     public Optional<List<Product>> findProductByName(String productName) {
         return Optional.ofNullable(productRepository.findByName(productName));
     }
+
+    public Optional<List<Product>> findProductByFeatures(String productName,Float productPrice, int productQuantity){
+        return Optional.ofNullable(productRepository.findByFeatures(productName,productPrice,productQuantity));
+    }
 }
 

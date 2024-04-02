@@ -11,10 +11,14 @@ import java.util.Optional;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product,Long> {
-    @Query(value="SELECT e FROM Product e WHERE e.product_price<= :price and e.product_name= :name",nativeQuery = false)
+    @Query(value="SELECT e FROM Product e WHERE e.productPrice>= :price and e.productName= :name",nativeQuery = false)
     List<Product> findByPrice(@Param("price") double price,@Param("name") String name);
 
-    @Query(value="SELECT e FROM Product e WHERE e.product_name= :name",nativeQuery = false)
+    @Query(value="SELECT e FROM Product e WHERE e.productName= :name",nativeQuery = false)
     List<Product> findByName(@Param("name") String name);
+
+    @Query(value="SELECT e FROM Product e WHERE e.productName= :name AND e.productPrice<=:price and e.productQuantity>=:quantity")
+    List<Product> findByFeatures(@Param("name") String name,@Param("price") double price,@Param("quantity") int quantity);
+
 
 }

@@ -12,7 +12,7 @@ import lombok.*;
 @Entity
 @ToString
 @Table(name="product")
-@AttributeOverride(name = "id", column = @Column(name = "product_id"))
+@AttributeOverride(name = "id", column = @Column(name = "productId"))
 public class Product extends BaseEntity {
 
     private String productName;
@@ -23,11 +23,11 @@ public class Product extends BaseEntity {
     private Long requestId;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="supplier_id", referencedColumnName="supplier_id", insertable = false, updatable = false)
+    @JoinColumn(name="supplierId", referencedColumnName="supplierId", insertable = false, updatable = false)
     @JsonIgnore
     private Supplier supplier;
 
     @ManyToOne
-    @JoinColumn(name="request_id", referencedColumnName="request_id", insertable = false, updatable = false)
+    @JoinColumn(name="requestId", referencedColumnName="requestId", insertable = false, updatable = false)
     private Request request;
 }

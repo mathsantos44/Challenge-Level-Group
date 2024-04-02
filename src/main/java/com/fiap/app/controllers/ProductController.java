@@ -42,6 +42,12 @@ public class ProductController {
         return ResponseEntity.ok(productList.get());
     }
 
+    @GetMapping("/by-features")
+    public ResponseEntity<List<Product>> getProductByFeatures(@RequestParam String name,@RequestParam Float maxPrice, @RequestParam int quantity){
+        Optional<List<Product>> productList=productService.findProductByFeatures(name,maxPrice,quantity);
+        return ResponseEntity.ok(productList.get());
+    }
+
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product){
         return ResponseEntity.ok(productService.saveProduct(product));
