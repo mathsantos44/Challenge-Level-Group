@@ -22,6 +22,9 @@ public class Request extends BaseEntity {
     na classe Main
     */
 
+    private String r_product_name;
+    private int quantity;
+    private Double price;
     private List<String> requests;
 
     @OneToMany(mappedBy = "request")

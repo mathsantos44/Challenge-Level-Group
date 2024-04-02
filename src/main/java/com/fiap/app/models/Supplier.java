@@ -16,11 +16,11 @@ import java.util.List;
 @AttributeOverride(name = "id", column = @Column(name = "supplier_id"))
 public class Supplier extends BaseEntity {
 
-    private String supplier_name;
-    private String supplier_email;
-    private String supplier_adress;
-    private Long supplier_contact;
-    private String supplier_company;
+    private String supplierName;
+    private String supplierEmail;
+    private String supplierAdress;
+    private Long supplierContact;
+    private String supplierCompany;
 
 
     @OneToMany(mappedBy = "supplier")

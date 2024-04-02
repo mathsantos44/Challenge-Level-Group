@@ -15,11 +15,11 @@ import java.util.List;
 @Table(name="client")
 @AttributeOverride(name = "id", column = @Column(name = "client_id"))
 public class Client extends BaseEntity {
-    private String client_name;
-    private String client_email;
-    private String client_adress;
-    private Long client_contact;
-    private String client_company;
+    private String clientName;
+    private String clientEmail;
+    private String clientAdress;
+    private Long clientContact;
+    private String clientCompany;
 
     @OneToMany(mappedBy = "client")
     private List<Request> requestList;

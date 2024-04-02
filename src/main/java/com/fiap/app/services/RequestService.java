@@ -1,6 +1,7 @@
 package com.fiap.app.services;
 
 import com.fiap.app.models.Client;
+import com.fiap.app.models.Product;
 import com.fiap.app.models.Request;
 import com.fiap.app.repositories.RequestRepository;
 import org.springframework.beans.factory.annotation.Autowired;

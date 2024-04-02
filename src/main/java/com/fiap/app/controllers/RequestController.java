@@ -1,5 +1,6 @@
 package com.fiap.app.controllers;
 
+import com.fiap.app.models.Product;
 import com.fiap.app.models.Request;
 import com.fiap.app.services.RequestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,4 +54,5 @@ public class RequestController {
         requestService.deleteRequestById(id);
         return ResponseEntity.noContent().build();
     }
+
 }
