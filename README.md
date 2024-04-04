@@ -42,6 +42,11 @@ Código de Status de Erro: 404 Not Found.
 Descrição: Retorna uma lista de produtos  com o nome passado e e preço dentro do intervalo sugerido.
 Código de Status de Sucesso: 200 OK.
 Código de Status de Erro: 404 Not Found.
+- GET /product/by-features?name={name}&price={price}&quantity={quantity}
+
+Descrição: Retorna uma lista de produtos  com o nome passado, preço e quantidade.
+Código de Status de Sucesso: 200 OK.
+Código de Status de Erro: 404 Not Found.
 - POST /product
 
 Descrição: Cria um produto
@@ -123,9 +128,9 @@ Código de Status de Erro: 404 Not Found.
 Descrição: Retorna um pedido com o ID passado.
 Código de Status de Sucesso: 200 OK.
 Código de Status de Erro: 404 Not Found.
-- POST /order
+- POST /order?productId={productId}&quantity={quantity}
 
-Descrição: Cria um novo pedido.
+Descrição: Cria um novo pedido, através dos parâmetros passado na url, productId e quantity.
 Código de Status de Sucesso: 201 Created.
 Código de Status de Erro: 400 Bad Request.
 - PUT /order/{id}
