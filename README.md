@@ -14,7 +14,7 @@ O projeto propõe o desenvolvimento de um software inovador para simplificar e a
 Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador localhost:8081/product, isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras usando os endpoints.
 
 # Principais Funcionalidades
-A aplicação possui duas funcionalidades principais, que seriam os endpoints "product/by-features", que traz para o usuário através de parâmetros passados na url, todos os produtos que se encaixam na descrição passada. A outra funcionalidade é pelo endpoint "order/make-order" que é responsável pela realização do pedido do cliente, também através de parâmetros passados na url ele reconhece o produto desejado a quantidade pedida e já salva este pedido no banco de dados.
+A aplicação possui duas funcionalidades principais, que seriam os endpoints "product/by-features", que traz para o usuário através de parâmetros passados na url, todos os produtos que se encaixam na descrição passada. E a outra funcionalidade é pelo endpoint "order/make-order" que é responsável pela realização do pedido do cliente, também através de parâmetros passados na url ele reconhece o produto desejado a quantidade pedida e já salva este pedido no banco de dados.
 
 # Documentação da API
 ### Server url
