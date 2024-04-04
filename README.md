@@ -7,6 +7,9 @@ FurniFlow
 - Paulo Maldonado – responsável pelo desenvolvimento da interface gráfica e auxílio na parte de projetos.
 - Pedro Kokuba – responsável pela criação do banco de dados e sua lógica e auxílio na parte de projetos.
 
+#Objetivo do Projeto
+O projeto propõe o desenvolvimento de um software inovador para simplificar e automatizar o processo de cotação de produtos de empresas. Baseado em requisitos do usuário e lógica back-end, a solução visa eliminar as dificuldades associadas a esse procedimento. O software tem o objetivo de tornar as cotações uma experiência eficiente, proporcionando às empresas uma abordagem mais ágil e inteligente para suas necessidades de aquisição de produtos, buscando também padronizar os dados dos fornecedores.
+
 #### Link do pitch:
 https://youtu.be/Y0awPv5_TM4
 
