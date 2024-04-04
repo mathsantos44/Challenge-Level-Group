@@ -21,6 +21,5 @@ public class Client extends BaseEntity {
     private Long clientContact;
     private String clientCompany;
 
-    @OneToMany(mappedBy = "client")
-    private List<Request> requestList;
+
 }

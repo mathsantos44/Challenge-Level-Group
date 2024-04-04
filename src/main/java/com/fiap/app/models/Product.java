@@ -1,6 +1,7 @@
 package com.fiap.app.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fiap.app.models.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +11,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@ToString
 @Table(name="product")
 @AttributeOverride(name = "id", column = @Column(name = "productId"))
 public class Product extends BaseEntity {
@@ -20,14 +20,19 @@ public class Product extends BaseEntity {
     private Float productPrice;
     private Integer productQuantity;
     private Long supplierId;
-    private Long requestId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="supplierId", referencedColumnName="supplierId", insertable = false, updatable = false)
     @JsonIgnore
     private Supplier supplier;
 
-    @ManyToOne
-    @JoinColumn(name="requestId", referencedColumnName="requestId", insertable = false, updatable = false)
-    private Request request;
+
+    @Override
+    public String toString() {
+        return "Nome:" + productName + '\'' +
+                ", Tipo:" + productType + '\'' +
+                ", Preço:" + productPrice +
+                ", Quantidade:" + productQuantity +
+                ", Id do Fornecedor" + supplierId +"\n";
+    }
 }

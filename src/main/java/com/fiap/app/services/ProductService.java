@@ -1,5 +1,6 @@
 package com.fiap.app.services;
 
+import com.fiap.app.models.Order;
 import com.fiap.app.models.Product;
 import com.fiap.app.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Scanner;
 
 @Service
 public class ProductService {
@@ -40,7 +42,18 @@ public class ProductService {
     }
 
     public Optional<List<Product>> findProductByFeatures(String productName,Float productPrice, int productQuantity){
-        return Optional.ofNullable(productRepository.findByFeatures(productName,productPrice,productQuantity));
+        Optional<List<Product>> products =Optional.ofNullable(productRepository.findByFeatures(productName,productPrice,productQuantity));
+        System.out.println(products);
+        return products;
+    }
+
+    public Optional<Product> getOrderInput(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entre as opções disponívies, escreva o ID do produto que você deseja pedir: ");
+        String productId = scanner.nextLine();
+        Optional<Product> productOptional = productRepository.findById(Long.parseLong(productId));
+        return productOptional;
+
     }
 }
 

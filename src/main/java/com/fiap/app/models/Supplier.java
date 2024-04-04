@@ -1,5 +1,7 @@
 package com.fiap.app.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fiap.app.models.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -24,5 +26,6 @@ public class Supplier extends BaseEntity {
 
 
     @OneToMany(mappedBy = "supplier")
+    @JsonIgnore
     private List<Product> productList;
 }

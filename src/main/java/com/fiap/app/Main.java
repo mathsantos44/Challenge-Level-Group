@@ -1,6 +1,7 @@
 package com.fiap.app;
 
-import com.fiap.app.models.Request;
+import com.fiap.app.repositories.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
