@@ -32,12 +32,6 @@ public class OrderController {
             return ResponseEntity.notFound().build();
         }
     }
-
-/*    @PostMapping
-    public ResponseEntity<Order> createOrder(@RequestBody Order order) {
-        return ResponseEntity.ok(orderService.saveOrder(order));
-    }*/
-
     @PutMapping("/{id}")
     public ResponseEntity<Order> updateOrder(@PathVariable Long id, @RequestBody Order order) {
         Optional<Order> existingOrder = orderService.findOrderById(id);

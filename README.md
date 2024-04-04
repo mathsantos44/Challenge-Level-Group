@@ -108,30 +108,30 @@ Descrição: Remove um fornecedor pelo ID.
 Código de Status de Sucesso: 204 No Content.
 Código de Status de Erro: 404 Not Found.
 
-#### 4. /request
-- GET /request
+#### 4. /order
+- GET /order
 
-Descrição: Retorna uma lista de todas as solicitações.
+Descrição: Retorna uma lista de todas os pedidos.
 Código de Status de Sucesso: 200 OK.
 Código de Status de Erro: 404 Not Found.
-- GET /request/{id}
+- GET /order/{id}
 
-Descrição: Retorna uma solicitação com o ID passado.
+Descrição: Retorna um pedido com o ID passado.
 Código de Status de Sucesso: 200 OK.
 Código de Status de Erro: 404 Not Found.
-- POST /request
+- POST /order
 
-Descrição: Cria uma nova solicitação.
+Descrição: Cria um novo pedido.
 Código de Status de Sucesso: 201 Created.
 Código de Status de Erro: 400 Bad Request.
-- PUT /request/{id}
+- PUT /order/{id}
 
-Descrição: Atualiza uma solicitação pelo ID.
+Descrição: Atualiza um pedido pelo ID.
 Código de Status de Sucesso: 200 OK.
 Código de Status de Erro: 400 Bad Request.
-- DELETE /request/{id}
+- DELETE /order/{id}
 
-Descrição: Remove uma solicitação pelo ID.
+Descrição: Remove um pedido pelo ID.
 Código de Status de Sucesso: 204 No Content.
 Código de Status de Erro: 404 Not Found.
 

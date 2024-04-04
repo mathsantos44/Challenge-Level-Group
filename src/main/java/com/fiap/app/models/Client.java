@@ -17,9 +17,10 @@ import java.util.List;
 public class Client extends BaseEntity {
     private String clientName;
     private String clientEmail;
-    private String clientAdress;
+    private String clientAddress;
     private Long clientContact;
     private String clientCompany;
+
 
 
 }

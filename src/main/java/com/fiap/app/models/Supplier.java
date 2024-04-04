@@ -20,7 +20,7 @@ public class Supplier extends BaseEntity {
 
     private String supplierName;
     private String supplierEmail;
-    private String supplierAdress;
+    private String supplierAddress;
     private Long supplierContact;
     private String supplierCompany;
 
