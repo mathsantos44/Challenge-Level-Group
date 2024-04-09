@@ -65,6 +65,11 @@
         <version>42.6.0</version>
     </dependency>
     <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>10.2.2.jre11</version> <!-- ou a versão mais recente disponível -->
+    </dependency>
+    <dependency>
         <groupId>com.oracle.database.jdbc</groupId>
         <artifactId>ojdbc10</artifactId>
         <version>19.18.0.0</version>
