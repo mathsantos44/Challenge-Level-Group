@@ -1,5 +1,9 @@
 # NOME DA APLICAÇÃO
 FurniFlow
+
+# Video de apresentação da aplicação
+link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
+
 # INTEGRANTES
 - Ayslan Garcia – responsável pela implementação de API’s e auxílio na parte de projetos.
 - Leonardo Sagara – responsável pelo desenvolvimento back-end e auxílio na parte de projetos.
