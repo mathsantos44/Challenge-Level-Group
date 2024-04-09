@@ -1,7 +1,7 @@
 # Nome da aplicação
 FurniFlow
 
-# Video de apresentação da aplicação
+# Video de apresentação
 link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
 
 # Integrantes
