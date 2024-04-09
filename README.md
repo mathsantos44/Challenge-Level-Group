@@ -1,10 +1,10 @@
-# NOME DA APLICAÇÃO
+# Nome da aplicação
 FurniFlow
 
 # Video de apresentação da aplicação
 link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
 
-# INTEGRANTES
+# Integrantes
 - Ayslan Garcia – responsável pela implementação de API’s e auxílio na parte de projetos.
 - Leonardo Sagara – responsável pelo desenvolvimento back-end e auxílio na parte de projetos.
 - Matheus Oliveira – responsável pela integração Cloud do sistema, desenvolvimento da lógica de machine learning e auxílio na parte de projetos.
@@ -14,7 +14,7 @@ link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
 # Objetivo do Projeto
 O projeto propõe o desenvolvimento de um software inovador para simplificar e automatizar o processo de cotação de produtos de empresas. Baseado em requisitos do usuário e lógica back-end, a solução visa eliminar as dificuldades associadas a esse procedimento. O software tem o objetivo de tornar as cotações uma experiência eficiente, proporcionando às empresas uma abordagem mais ágil e inteligente para suas necessidades de aquisição de produtos, buscando também padronizar os dados dos fornecedores.
 
-# INSTRUÇÕES
+# Instruções
 Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador localhost:8081/product, isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras usando os endpoints passando as caractrísticas que procura, como preço, quantidade e nome. A ideia do programa é olhar os produtos disponiveis através do "GET/product/by-features?name={}&price={}&quantity={}", e depois escolher pelo ID aquele que mais se encaixa no que procura e então enviar o pedido pelo endpoint "POST/order?productId={}&quantity={}", que irá salvar no banco de dados.
 
 # Principais Funcionalidades
