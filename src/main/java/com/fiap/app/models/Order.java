@@ -11,7 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 @ToString
-@Table(name="'order'")
+@Table(name="\"ORDER\"")
 @AttributeOverride(name = "id", column = @Column(name = "orderId"))
 public class Order extends BaseEntity {
     private String productNameOrder;
