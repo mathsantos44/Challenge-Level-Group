@@ -1,5 +1,4 @@
-# Nome da aplicação
-FurniFlow
+# FurniFlow
 
 # Video de apresentação
 link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
