@@ -1,5 +1,8 @@
 # FurniFlow
 
+### Descrição
+Este é um projeto em Java desenvolvido com Maven para automatizar o processo de cotação em compras. O objetivo principal é facilitar e agilizar o processo de cotação, permitindo que usuários solicitem e comparem cotações de diferentes fornecedores de forma eficiente. Futuramente implemetaremos o front-end da aplicação.
+
 ### Video de apresentação
 link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
 
