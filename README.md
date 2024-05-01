@@ -3,12 +3,21 @@
 ## Descrição
 Este é um projeto em Java desenvolvido com Maven para automatizar o processo de cotação em compras. O objetivo principal é facilitar e agilizar o processo de cotação, permitindo que usuários solicitem e comparem cotações de diferentes fornecedores de forma eficiente. Futuramente implemetaremos o front-end da aplicação.
 
-### Tecnologias utilizadas
+## Tecnologias utilizadas
 - Java
 - Maven
 - Spring
 - Oracle Database
 - Lombok
+
+## Pré-requisitos
+- Java 17 instalado
+- Ter uma IDE instalada
+- Maven instalado
+
+## Como executar
+- Clone este repositório do Github
+- Coloque ele para executar na IDE
 
 ## Video de apresentação
 link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
