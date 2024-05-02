@@ -8,8 +8,7 @@
             <property name="javax.persistence.jdbc.user" value="rm96934"/>
             <property name="javax.persistence.jdbc.password" value="290499"/>
             <property name="javax.persistence.query.timeout" value="60"/>
-            <property name="javax.persistence.schema-generation.database.action" value="create"/>
-            <property name="javax.persistence.sql-load-script-source" value="META-INF/database/load.sql"/>
+            <property name="javax.persistence.schema-generation.database.action" value="update"/>
 
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.Oracle12cDialect"/> <!-- padrão do projedo do prof: org.hibernate.dialect.SQLServerDialect -->
