@@ -22,26 +22,6 @@ Este é um projeto em Java desenvolvido com Maven para automatizar o processo de
 ## Instruções
 Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador "localhost:8081/product", isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras passando seus requisitos através do endpoint "GET product/by-features", também é possivel fazer a pesquisa através de um único requisito (checar a documentação da API). Depois de analisar os produtos, escolher o ID do que mais se encaixa no que procura e então, passar a quantidade e enviar o pedido pelo endpoint "POST order", que irá salvar no banco de dados.
 
-## Video de apresentação
-link: https://www.youtube.com/watch?v=fYn2E2YwoUc&ab_channel=AyslanGarcia
-
-## Integrantes
-- Ayslan Garcia – responsável pela implementação de API’s e auxílio na parte de projetos.
-- Leonardo Sagara – responsável pelo desenvolvimento back-end e auxílio na parte de projetos.
-- Matheus Oliveira – responsável pela integração Cloud do sistema, desenvolvimento da lógica de machine learning e auxílio na parte de projetos.
-- Paulo Maldonado – responsável pelo desenvolvimento da interface gráfica e auxílio na parte de projetos.
-- Pedro Kokuba – responsável pela criação do banco de dados e sua lógica e auxílio na parte de projetos.
-
-## Objetivo do Projeto
-O projeto propõe o desenvolvimento de um software inovador para simplificar e automatizar o processo de cotação de produtos de empresas. Baseado em requisitos do usuário e lógica back-end, a solução visa eliminar as dificuldades associadas a esse procedimento. O software tem o objetivo de tornar as cotações uma experiência eficiente, proporcionando às empresas uma abordagem mais ágil e inteligente para suas necessidades de aquisição de produtos, buscando também padronizar os dados dos fornecedores.
-
-## Instruções
-Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador localhost:8081/product, isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras usando os endpoints passando as caractrísticas que procura, como preço, quantidade e nome. A ideia do programa é olhar os produtos disponiveis através do "GET/product/by-features?name={}&price={}&quantity={}", e depois escolher pelo ID aquele que mais se encaixa no que procura e então enviar o pedido pelo endpoint "POST/order?productId={}&quantity={}", que irá salvar no banco de dados.
-
-## Principais Funcionalidades
-A aplicação possui duas funcionalidades principais, que seriam os endpoints "product/by-features", que traz para o usuário através de parâmetros passados na url, todos os produtos que se encaixam na descrição passada. E a outra funcionalidade é pelo endpoint "order/make-order" que é responsável pela realização do pedido do cliente, também através de parâmetros passados na url, ele reconhece o produto desejado a quantidade pedida e já salva este pedido no banco de dados.
-Observação: ao rodar o código e selecionar o endpoint "order/make-order", será pedido pelo console o ID do Cliente para que o pedido possa ser associado a um cliente e salvo corretamente no banco, esta não é proposta final para o metodo é apenas um recurso temporário.
-
 ## Documentação da API
 #### Server url
 localhost:8081
