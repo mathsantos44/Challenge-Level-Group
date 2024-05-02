@@ -149,6 +149,5 @@ Descrição: Remove um pedido pelo ID.
 Código de Status de Sucesso: 204 No Content.
 Código de Status de Erro: 404 Not Found.
 
-## Arquitetura da Solução
-![Captura de Tela (174)](https://github.com/Leosagara/Challenge-Level-Group/assets/75694982/e50e0079-1404-442a-9a48-a4872bd01f64)
+
 
