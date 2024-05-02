@@ -23,8 +23,8 @@ Este é um projeto em Java com Maven desenvolvido para abordar o problema que as
 Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estão funcionando corretamente, para que haja uma demonstração de uma possível requisição do cliente, ao rodar a classe Main() abrir no navegador "localhost:8081/product", isto retornará a lista de todos os produtos no banco de dados, após analisar os produtos disponíveis fazer as procuras passando seus requisitos através do endpoint "GET product/by-features", também é possivel fazer a pesquisa através de um único requisito (checar a documentação da API). Depois de analisar os produtos, escolher o ID do que mais se encaixa no que procura e então, passar a quantidade e enviar o pedido pelo endpoint "POST order", que irá salvar no banco de dados.
 
 ## Documentação da API
-#### Server url
-localhost:8081
+#### Server URL
+- localhost:8081/
 #### Endpoints
 ##### 1. /product
 - GET /product
