@@ -25,129 +25,30 @@ Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estã
 ## Documentação da API
 #### Server URL
 - localhost:8081/
-#### Endpoints
-##### 1. /product
-- GET /product
 
-Descrição: Retorna uma lista de todos os produtos.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /product/{id}
-
-Descrição: Retorna um produto com o ID passado.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /product/by-name?name={name}
-
-Descrição: Retorna uma lista de produtos com o nome passado.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /product/by-price?price={price}&name={name}
-
-Descrição: Retorna uma lista de produtos  com o nome passado e e preço dentro do intervalo sugerido.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /product/by-features?name={name}&price={price}&quantity={quantity}
-
-Descrição: Retorna uma lista de produtos  com o nome passado, preço e quantidade.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- POST /product
-
-Descrição: Cria um produto
-Código de Status de Sucesso: 201 OK.
-Código de Status de Erro: 400 Bad Request.
-- PUT /product/{id}
-
-Descrição: Atualiza um produto pelo ID.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 400 Bad Request.
-- DELETE /product/{id}
-
-Descrição: Remove um produto pelo ID.
-Código de Status de Sucesso: 204 No Content.
-Código de Status de Erro: 404 Not Found.
-
-##### 2. /client
-- GET /client
-
-Descrição: Retorna uma lista de todos os clientes.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /client/{id}
-
-Descrição: Retorna um cliente com o ID passado.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- POST /client
-
-Descrição: Cria um cliente.
-Código de Status de Sucesso: 201 Created.
-Código de Status de Erro: 400 Bad Request.
-- PUT /client/{id}
-
-Descrição: Atualiza um cliente pelo ID.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 400 Bad Request.
-- DELETE /client/{id}
-
-Descrição: Remove um cliente pelo ID.
-Código de Status de Sucesso: 204 No Content.
-Código de Status de Erro: 404 Not Found.
-
-#### 3. /supplier
-- GET /supplier
-
-Descrição: Retorna uma lista de todos os fornecedores.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /supplier/{id}
-
-Descrição: Retorna um fornecedor com o ID passado.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- POST /supplier
-
-Descrição: Cria um novo fornecedor.
-Código de Status de Sucesso: 201 Created.
-Código de Status de Erro: 400 Bad Request.
-- PUT /supplier/{id}
-
-Descrição: Atualiza um fornecedor pelo ID.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 400 Bad Request.
-- DELETE /supplier/{id}
-
-Descrição: Remove um fornecedor pelo ID.
-Código de Status de Sucesso: 204 No Content.
-Código de Status de Erro: 404 Not Found.
-
-#### 4. /order
-- GET /order
-
-Descrição: Retorna uma lista de todas os pedidos.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- GET /order/{id}
-
-Descrição: Retorna um pedido com o ID passado.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 404 Not Found.
-- POST /order?productId={productId}&quantity={quantity}
-
-Descrição: Cria um novo pedido, através dos parâmetros passado na url, productId e quantity.
-Código de Status de Sucesso: 201 Created.
-Código de Status de Erro: 400 Bad Request.
-- PUT /order/{id}
-
-Descrição: Atualiza um pedido pelo ID.
-Código de Status de Sucesso: 200 OK.
-Código de Status de Erro: 400 Bad Request.
-- DELETE /order/{id}
-
-Descrição: Remove um pedido pelo ID.
-Código de Status de Sucesso: 204 No Content.
-Código de Status de Erro: 404 Not Found.
-
-
+| Endpoint                                 | Método | Descrição                                                              | Parâmetros        | Resposta de Sucesso (Código HTTP) | Resposta de Falha (Código HTTP) |
+|------------------------------------------|--------|------------------------------------------------------------------------|-------------------|-----------------------------------|----------------------------------|
+| /client                                  | GET    | Retorna uma lista de todos os clientes cadastrados.                    | Nenhum            | Retorna uma lista de clientes (200) | Retorna um erro se não houver clientes cadastrados (404) |
+| /client/{id}                             | GET    | Retorna os detalhes de um cliente específico com base no ID fornecido. | ID do cliente (PathVariable) | Retorna os detalhes do cliente correspondente ao ID (200) | Retorna um erro se o cliente não for encontrado (404) |
+| /client                                  | POST   | Cria um novo cliente com base nos dados fornecidos.                   | Objeto JSON contendo os dados do cliente | Retorna os detalhes do cliente recém-criado (200) | Retorna um erro se os dados do cliente forem inválidos (400) |
+| /client/{id}                             | PUT    | Atualiza os dados de um cliente existente com base no ID fornecido.   | ID do cliente (PathVariable), Objeto JSON contendo os novos dados do cliente | Retorna os detalhes do cliente atualizado (200) | Retorna um erro se o cliente não for encontrado (404) |
+| /client/{id}                             | DELETE | Exclui um cliente existente com base no ID fornecido.                  | ID do cliente (PathVariable) | Retorna uma resposta vazia indicando sucesso na exclusão (204) | Retorna um erro se o cliente não for encontrado (404) |
+| /order                                   | GET    | Retorna uma lista de todos os pedidos cadastrados.                    | Nenhum            | Retorna uma lista de pedidos (200) | Retorna um erro se não houver pedidos cadastrados (404) |
+| /order/{id}                              | GET    | Retorna os detalhes de um pedido específico com base no ID fornecido. | ID do pedido (PathVariable) | Retorna os detalhes do pedido correspondente ao ID (200) | Retorna um erro se o pedido não for encontrado (404) |
+| /order/{id}                              | PUT    | Atualiza os dados de um pedido existente com base no ID fornecido.    | ID do pedido (PathVariable), Objeto JSON contendo os novos dados do pedido | Retorna os detalhes do pedido atualizado (200) | Retorna um erro se o pedido não for encontrado (404) |
+| /order/{id}                              | DELETE | Exclui um pedido existente com base no ID fornecido.                   | ID do pedido (PathVariable) | Retorna uma resposta vazia indicando sucesso na exclusão (204) | Retorna um erro se o pedido não for encontrado (404) |
+| /order                                   | POST   | Cria um novo pedido com base no produto e na quantidade fornecidos.   | ID do produto (RequestParam), Quantidade do produto (RequestParam) | Retorna os detalhes do pedido recém-criado (200) | Retorna um erro se os dados do pedido forem inválidos (400) |
+| /product                                 | GET    | Retorna uma lista de todos os produtos cadastrados.                    | Nenhum            | Retorna uma lista de produtos (200) | Retorna um erro se não houver produtos cadastrados (404) |
+| /product/{id}                            | GET    | Retorna os detalhes de um produto específico com base no ID fornecido. | ID do produto (PathVariable) | Retorna os detalhes do produto correspondente ao ID (200) | Retorna um erro se o produto não for encontrado (404) |
+| /product/by-price                        | GET    | Retorna uma lista de produtos com base no preço e no nome fornecidos.   | Preço do produto (RequestParam), Nome do produto (RequestParam) | Retorna uma lista de produtos filtrados (200) | Retorna um erro se não houver produtos correspondentes (404) |
+| /product/by-name                         | GET    | Retorna uma lista de produtos com base no nome fornecido.               | Nome do produto (RequestParam) | Retorna uma lista de produtos filtrados (200) | Retorna um erro se não houver produtos correspondentes (404) |
+| /product/by-features                     | GET    | Retorna uma lista de produtos com base no nome, preço máximo e quantidade fornecidos. | Nome do produto (RequestParam), Preço máximo do produto (RequestParam), Quantidade do produto (RequestParam) | Retorna uma lista de produtos filtrados (200) | Retorna um erro se não houver produtos correspondentes (404) |
+| /product                                 | POST   | Cria um novo produto com base nos dados fornecidos.                   | Objeto JSON contendo os dados do produto | Retorna os detalhes do produto recém-criado (200) | Retorna um erro se os dados do produto forem inválidos (400) |
+| /product/{id}                            | PUT    | Atualiza os dados de um produto existente com base no ID fornecido.   | ID do produto (PathVariable), Objeto JSON contendo os novos dados do produto | Retorna os detalhes do produto atualizado (200) | Retorna um erro se o produto não for encontrado (404) |
+| /product/{id}                            | DELETE | Exclui um produto existente com base no ID fornecido.                  | ID do produto (PathVariable) | Retorna uma resposta vazia indicando sucesso na exclusão (204) | Retorna um erro se o produto não for encontrado (404) |
+| /supplier                                | GET    | Retorna uma lista de todos os fornecedores cadastrados.                 | Nenhum            | Retorna uma lista de fornecedores (200) | Retorna um erro se não houver fornecedores cadastrados (404) |
+| /supplier/{id}                           | GET    | Retorna os detalhes de um fornecedor específico com base no ID fornecido. | ID do fornecedor (PathVariable) | Retorna os detalhes do fornecedor correspondente ao ID (200) | Retorna um erro se o fornecedor não for encontrado (404) |
+| /supplier                                | POST   | Cria um novo fornecedor com base nos dados fornecidos.                 | Objeto JSON contendo os dados do fornecedor | Retorna os detalhes do fornecedor recém-criado (200) | Retorna um erro se os dados do fornecedor forem inválidos (400) |
+| /supplier/{id}                           | PUT    | Atualiza os dados de um fornecedor existente com base no ID fornecido. | ID do fornecedor (PathVariable), Objeto JSON contendo os novos dados do fornecedor | Retorna os detalhes do fornecedor atualizado (200) | Retorna um erro se o fornecedor não for encontrado (404) |
+| /supplier/{id}                           | DELETE | Exclui um fornecedor existente com base no ID fornecido.                | ID do fornecedor (PathVariable) | Retorna uma resposta vazia indicando sucesso na exclusão (204) | Retorna um erro se o fornecedor não for encontrado (404) |
 
