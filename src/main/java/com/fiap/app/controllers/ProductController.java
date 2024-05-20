@@ -53,12 +53,18 @@ public class ProductController {
         return ResponseEntity.ok(productService.saveProduct(product));
     }
 
+    @PostMapping("/products")
+    public ResponseEntity<List<Product>> createProducts(@RequestBody List<Product> products) {
+        List<Product> savedProducts = productService.saveProducts(products);
+        return ResponseEntity.ok(savedProducts);
+    }
+
     @PutMapping("/{id}")
         public ResponseEntity<Product> updateProduct(@PathVariable Long id,@RequestBody Product product){
             if(productService.findProductById(id).isEmpty()){
                 return ResponseEntity.notFound().build();
             }
-            product.setId(id);
+            product.setProductId(id);
             return ResponseEntity.ok(productService.saveProduct(product));
         }
 

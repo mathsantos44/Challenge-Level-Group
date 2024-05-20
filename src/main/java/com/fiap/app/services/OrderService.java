@@ -49,6 +49,7 @@ public class OrderService {
         order.setProductNameOrder(product.getProductName());
         order.setProductQuantityOrder(quantity);
         order.setSupplier(product.getSupplier());
+        product.setProductQuantity(product.getProductQuantity()-quantity);
         order.setOrderPrice(product.getProductPrice()*order.getProductQuantityOrder());
         order.setClient(client);
         return order;

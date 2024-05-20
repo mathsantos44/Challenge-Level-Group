@@ -1,6 +1,5 @@
 package com.fiap.app.models;
 
-import com.fiap.app.models.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,8 +12,10 @@ import java.util.List;
 @Entity
 @ToString
 @Table(name="client")
-@AttributeOverride(name = "id", column = @Column(name = "clientId"))
-public class Client extends BaseEntity {
+public class Client {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long clientId;
     private String clientName;
     private String clientEmail;
     private String clientAddress;

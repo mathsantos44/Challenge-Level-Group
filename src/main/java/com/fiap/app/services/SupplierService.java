@@ -26,6 +26,10 @@ public class SupplierService {
         return supplierRepository.save(supplier);
     }
 
+    public List<Supplier> saveSuppliers(List<Supplier> suppliers) {
+        return supplierRepository.saveAll(suppliers);
+    }
+
     public void deleteSupplierById(Long id) {
         supplierRepository.deleteById(id);
     }

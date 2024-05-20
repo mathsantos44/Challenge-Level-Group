@@ -36,12 +36,18 @@ public class SupplierController {
         return ResponseEntity.ok(supplierService.saveSupplier(supplier));
     }
 
+    @PostMapping("/suppliers")
+    public ResponseEntity<List<Supplier>> createSuppliers(@RequestBody List<Supplier> suppliers) {
+        List<Supplier> savedSuppliers = supplierService.saveSuppliers(suppliers);
+        return ResponseEntity.ok(savedSuppliers);
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<Supplier> updateSupplier(@PathVariable Long id, @RequestBody Supplier supplier) {
         if (supplierService.findSupplierById(id).isEmpty()) {
             return ResponseEntity.notFound().build();
         }
-        supplier.setId(id);
+        supplier.setSupplierId(id);
         return ResponseEntity.ok(supplierService.saveSupplier(supplier));
     }
 

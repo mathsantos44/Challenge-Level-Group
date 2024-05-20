@@ -6,6 +6,7 @@ import com.fiap.app.services.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +18,44 @@ public class ClientController {
 
     @Autowired
     private ClientService clientService;
+    /*
+    @GetMapping
+    public String menu(Model model){
+        model.addAttribute("client",clientService.findAllClients());
+        return "sign_up";
+    }
+
+    @GetMapping("/create")
+    public String showCreateForm(Model model) {
+        model.addAttribute("client", new Client());
+        return "sign_up";
+    }
+
+    @PostMapping
+    public String saveClient(@ModelAttribute Client client) {
+        clientService.saveClient(client);
+        return "redirect:client";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String showEditForm(@PathVariable Long id, Model model) {
+        Client client = clientService.findClientById(id).orElseThrow(() -> new IllegalArgumentException("Usuário não encotrado Id: " + id));
+        model.addAttribute("client", client);
+        return "sign_up";
+    }
+
+    @GetMapping("/update/{id}")
+    public String updateClient(@PathVariable Long id, @ModelAttribute Client client) {
+        clientService.saveClient(client);
+        return "sign_up";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteClient(@PathVariable Long id) {
+        clientService.deleteClientById(id);
+        return "redirect:/client";
+    }
+    */
 
     @GetMapping
     public ResponseEntity<List<Client>> getAllClients(){
@@ -42,7 +81,7 @@ public class ClientController {
         if(clientService.findClientById(id).isEmpty()){
             return ResponseEntity.notFound().build();
         }
-        client.setId(id);
+        client.setClientId(id);
         return ResponseEntity.ok(clientService.saveClient(client));
     }
 
@@ -54,4 +93,6 @@ public class ClientController {
         clientService.deleteClientById(id);
         return ResponseEntity.noContent().build();
     }
+
+
 }

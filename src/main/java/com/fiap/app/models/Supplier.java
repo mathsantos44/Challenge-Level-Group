@@ -1,8 +1,7 @@
 package com.fiap.app.models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fiap.app.models.base.BaseEntity;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,8 +15,10 @@ import java.util.List;
 @ToString
 @Table(name="supplier")
 @AttributeOverride(name = "id", column = @Column(name = "supplierId"))
-public class Supplier extends BaseEntity {
-
+public class Supplier{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long supplierId;
     private String supplierName;
     private String supplierEmail;
     private String supplierAddress;
@@ -28,4 +29,9 @@ public class Supplier extends BaseEntity {
     @OneToMany(mappedBy = "supplier")
     @JsonIgnore
     private List<Product> productList;
+
+    @OneToMany(mappedBy = "supplier", fetch = FetchType.EAGER)
+    @JsonIgnore
+    private List<Order> orders;
+
 }

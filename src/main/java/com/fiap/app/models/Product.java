@@ -1,8 +1,6 @@
 package com.fiap.app.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fiap.app.models.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,8 +11,10 @@ import lombok.*;
 @Entity
 @Table(name="product")
 @AttributeOverride(name = "id", column = @Column(name = "productId"))
-public class Product extends BaseEntity {
-
+public class Product{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productId;
     private String productName;
     private String productType;
     private Float productPrice;

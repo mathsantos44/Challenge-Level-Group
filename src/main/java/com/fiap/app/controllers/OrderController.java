@@ -36,7 +36,7 @@ public class OrderController {
     public ResponseEntity<Order> updateOrder(@PathVariable Long id, @RequestBody Order order) {
         Optional<Order> existingOrder = orderService.findOrderById(id);
         if (existingOrder.isPresent()) {
-            order.setId(id);
+            order.setOrderId(id);
             return ResponseEntity.ok(orderService.saveOrder(order));
         } else {
             return ResponseEntity.notFound().build();
@@ -58,6 +58,7 @@ public class OrderController {
     public ResponseEntity<Order> makeOrder(@RequestParam Long productId,@RequestParam int quantity){
         Order order = orderService.makeOrder(productId,quantity);
         return ResponseEntity.ok(orderService.saveOrder(order));
+
     }
 
 }
