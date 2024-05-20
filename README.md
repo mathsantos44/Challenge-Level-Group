@@ -7,7 +7,7 @@ Este é um projeto em Java com Maven desenvolvido para abordar o problema que as
 - Java
 - Maven
 - Spring
-- Oracle Database
+- SQL Server
 - Lombok
 
 ## Pré-requisitos
