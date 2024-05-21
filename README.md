@@ -54,6 +54,8 @@ Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estã
 
 ## Vídeos de Demonstração do Projeto:
 [Link 1](https://youtu.be/oI9KEpyYQmU)
+
 [Link 2](https://www.youtube.com/watch?v=0uNS7syCqDc)
+
 [Link 3](https://www.youtube.com/watch?v=wHfLc96SuAk)
 
