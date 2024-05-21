@@ -52,3 +52,8 @@ Por se tratar de uma aplicação demonstrativa muitas funcionalidades não estã
 | /supplier/{id}                           | PUT    | Atualiza os dados de um fornecedor existente com base no ID fornecido. | ID do fornecedor (PathVariable), Objeto JSON contendo os novos dados do fornecedor | Retorna os detalhes do fornecedor atualizado (200) | Retorna um erro se o fornecedor não for encontrado (404) |
 | /supplier/{id}                           | DELETE | Exclui um fornecedor existente com base no ID fornecido.                | ID do fornecedor (PathVariable) | Retorna uma resposta vazia indicando sucesso na exclusão (204) | Retorna um erro se o fornecedor não for encontrado (404) |
 
+## Vídeos de Demonstração do Projeto:
+[Link 1](https://youtu.be/oI9KEpyYQmU)
+[Link 2](https://www.youtube.com/watch?v=0uNS7syCqDc)
+[Link 3](https://www.youtube.com/watch?v=wHfLc96SuAk)
+
